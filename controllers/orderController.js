@@ -7,6 +7,7 @@ exports.createOrder = async (req, res) => {
         userId: req.body.userId,
         items: req.body.items,  // Expecting an array of items
         phone: req.body.phone,
+        name: req.body.name,
         address: req.body.address,
         priceTotal: req.body.priceTotal
       });

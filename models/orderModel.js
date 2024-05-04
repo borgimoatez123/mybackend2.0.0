@@ -20,6 +20,10 @@ const orderSchema = new mongoose.Schema({
     ref: 'User'
   },
   items: [orderItemSchema],  // Array of items
+  name: {
+    type: String,
+    required: false
+  },
   phone: {
     type: String,
     required: false
